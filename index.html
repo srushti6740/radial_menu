@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Radial Menu</title>
+</head>
+<body>
+
+    <div class="toggle" id="toggle" onclick="expand()">
+        <i class="fa-solid fa-plus" id="plus"></i>
+    </div>
+    <div class="menu" id="menu">
+        <a href="#">
+            <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-video-camera" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-camera" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-bell" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    
+    
+<script>
+    var i=0;
+    function expand(){
+        if(i==0){
+            document.getElementById("menu").style.transform='scale(3)';
+            document.getElementById("plus").style.transform = 'rotate(45deg)';
+             i=1;
+        }
+        else{
+            document.getElementById("menu").style.transform='scale(0)';
+            document.getElementById("plus").style.transform = 'rotate(0deg)';
+            i=0;
+        }
+    }
+</script>
+</body>
+</html>
